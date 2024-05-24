@@ -1,0 +1,164 @@
+<app-navegador> </app-navegador>
+<h1></h1>
+ <div class="contenedor">
+  <div class="cabecera">
+    <h3>Detalle del Afiliado</h3>
+  
+  
+    <button class="btnEditar">Editar</button>
+    <button class="btnEditar" routerLink="/ver">VOLVER</button>
+  
+  </div> <hr>
+
+  <h2>{{ afiliado.nombre_apellido }}</h2>
+
+<div class="tablas">
+  <!-- Tabla 1: Información Personal -->
+  <table>
+    <thead>
+      <tr>
+        <th>DNI/CUIL</th>
+        <th>FECHA DE NACIMIENTO</th>
+        <th>NACIONALIDAD</th>
+        <th>SEXO</th>
+        <th>ESTADO CIVIL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ afiliado.cuit_titular }}</td>
+        <td>{{ afiliado.fecha_nacimiento }}</td>
+        <td>{{ afiliado.nacionalidad }}</td>
+        <td>{{ afiliado.sexo }}</td>
+        <td>{{ afiliado.estado_civil }}</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <!-- Tabla 2: Información de Contacto -->
+  <table>
+    <thead>
+      <tr>
+        <th>E-MAIL</th>
+        <th>TELÉFONO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ afiliado.email }}</td>
+        <td>{{ afiliado.telefono }}</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <!-- Tabla 3: Información Laboral -->
+  <table>
+    <thead>
+      <tr>
+        <th>RAZÓN SOCIAL</th>
+        <th>EMPRESA EMPLEADORA</th>
+        <th>CUIT EMPRESA</th>
+        <th>TIPO DE AFILIADO</th>
+        <th>NÚMERO DE TRÁMITE OPC CAMBIO</th>
+        <th>FECHA DE ALTA DEL FORMULARIO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ afiliado.razon_social }}</td>
+        <td>{{ afiliado.empresa }}</td>
+        <td>{{ afiliado.cuit_empresa }}</td>
+        <td>{{ afiliado.tipo_afiliado }}</td>
+        <td>{{ afiliado.numero_tramite_opc_cambio }}</td>
+        <td>{{ afiliado.fecha_alta_formulario }}</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <!-- Tabla 4: Dirección -->
+  <table>
+    <thead>
+      <tr>
+        <th>CALLE</th>
+        <th>NÚMERO</th>
+        <th>PROVINCIA</th>
+        <th>LOCALIDAD</th>
+        <th>CÓDIGO POSTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ afiliado.domicilio.calle }}</td>
+        <td>{{ afiliado.domicilio.numero }}</td>
+        <td>{{ afiliado.domicilio.provincia }}</td>
+        <td>{{ afiliado.domicilio.localidad }}</td>
+        <td>{{ afiliado.domicilio.codigo_postal }}</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <!-- Tabla 5: Información Adicional -->
+  <table>
+    <thead>
+      <tr>
+        <th>PARENTESCO</th>
+        <th>DETALLE DEL PARENTESCO</th>
+        <th>TIPO DE DISCAPACIDAD</th>
+        <th>FECHA DE VENCIMIENTO DEL CERTIFICADO</th>
+        <th>RNOS</th>
+        <th>MOVIMIENTO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ afiliado.parentesco }}</td>
+        <td>{{ afiliado.detalle_parentesco }}</td>
+        <td>{{ afiliado.tipo_discapacidad }}</td>
+        <td>{{ afiliado.fecha_vencimiento_certificado }}</td>
+        <td>{{ afiliado.r_nos }}</td>
+        <td>{{ afiliado.movimiento }}</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <!-- Tabla 6: Adjuntos -->
+  <table>
+    <thead>
+      <tr>
+        <th>IMAGEN DEL DNI (FRENTE)</th>
+        <th>IMAGEN DEL DNI (DORSO)</th>
+        <th>PDF DEL FORMULARIO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ afiliado.img_dni1 }}</td>
+        <td>{{ afiliado.img_dni2 }}</td>
+        <td>{{ afiliado.pdf_formulario }}</td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <!-- Tabla 7: Notas -->
+  <table>
+    <thead>
+      <tr>
+        <th>NOTAS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ afiliado.notas }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+</div>
+
+
+
+
+
+

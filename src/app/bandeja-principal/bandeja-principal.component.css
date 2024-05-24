@@ -1,0 +1,58 @@
+/* bandeja-principal.component.css */
+.contenedor{
+    max-width: 900px;
+    margin:5px auto;
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    padding:40px;
+    text-align: center;
+    
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.322);
+  }
+
+  h2{
+margin: 0 3px;
+  }
+
+  .bandeja-principal {
+    justify-content: center;
+      display: flex;
+     
+      align-items: center;
+     
+    }
+    
+    .card {
+      width: 200px;
+      height:60px;
+      background-color: #036e0570;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.8s ease;
+      box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.343);
+      border: 1px solid rgba(255, 255, 255, 0.646);
+    }
+    
+    .card:hover {
+      transform: scale(1.5);
+      background-color: #03506e70;
+      border: 1px solid rgb(255, 255, 255);
+    }
+    
+    .card h2 {
+      margin-top: 0;
+    }
+    
+    .card p {
+      margin-bottom: 0;
+    }
+    
+
+    .imgSalud {
+      max-width: 400px;
+      max-height: 600px;
+     
+    }

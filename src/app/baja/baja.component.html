@@ -1,0 +1,44 @@
+<app-navegador></app-navegador>
+<div class="contenedor">
+
+  <h1 style="color:rgb(0, 0, 0)">BAJA DE AFILIADO</h1> <hr>
+  <p>DEBE ESTAR SEGURO/A ANTES DE DAR DE BAJA A UN AFILIADO/A</p>
+  <h3  style="color:rgb(255, 255, 255); background-color: red;">esta opción no se puede deshacer</h3>
+  <hr />
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre y Apellido</th>
+        <th>CUIT/DNI</th>
+        <td>Teléfono</td>
+       <td> mail </td>
+      
+      </tr>
+    </thead>
+    <tbody *ngIf="afiliados.length > 0">
+      <tr *ngFor="let afiliado of afiliados">
+        <td>{{ afiliado.nombre_apellido }}</td>
+       <td>{{ afiliado.cuit_titular }}</td>
+       <td>{{ afiliado.telefono}}</td>
+       <td>{{ afiliado.email }}</td>
+       
+   
+        <td>
+          <button class="btnEliminar" (click)="deleteAfiliado(afiliado.id)">
+            Eliminar Afiliado
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>NUESTROS AFILIADOS</h3>
+  <hr />
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/utesocial-4228352-2.appspot.com/o/img_afiliados_app%2Fafiliadosapp.png?alt=media&token=4d9cbe48-9938-4174-9e98-93ea40806be3"
+    alt=""
+    height="100px"
+  />   
+</div>
+<br />

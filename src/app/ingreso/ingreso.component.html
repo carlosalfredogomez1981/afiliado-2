@@ -1,0 +1,19 @@
+<div class="login-container">
+    <img src="https://firebasestorage.googleapis.com/v0/b/utesocial-4228352-2.appspot.com/o/img_afiliados_app%2FLOGOUTEPLIM.png?alt=media&token=f3602f0d-ebea-49f9-98d6-bba06d6bbfa9" alt="" width="50%">
+      
+      <img style="margin-top: 10px; box-shadow: 0px 3px 15px rgb(255, 255, 255);" src="https://firebasestorage.googleapis.com/v0/b/utesocial-4228352-2.appspot.com/o/img_afiliados_app%2Ffondo_medicos.jpg?alt=media&token=f5442d99-6c70-49ac-b99f-8fd7648281bd" alt="" width="60%">
+      <h2>Sistema de Gestión de Afiliados</h2>
+      <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="email">Usuario</label>
+          <input type="email" formControlName="email" id="email" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input type="password" formControlName="password" id="password" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <button type="submit">ENTRAR</button>
+      </form>
+     
+    </div>
+  

@@ -1,0 +1,51 @@
+<app-navegador></app-navegador>
+
+<div class="contenedor">
+  <form (submit)="buscarAfiliados()">
+    <input type="text" pattern="[0-9]" name="busqueda" [(ngModel)]="terminoBusqueda" placeholder="Buscar afiliado">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <div *ngIf="afiliadosEncontrados.length > 0">
+    <div style="max-width: 450px; margin: 0 auto">
+      <h2>Resultados de la búsqueda:</h2>
+      <ul style="background-color: rgb(255, 255, 255); border-radius: 10px; padding: 10px; justify-content: center; ">
+        <li *ngFor="let afiliado of afiliadosEncontrados">
+          <button class="btnVer" (click)="onVerClick(afiliado.id)">Ver</button>
+        </li>
+      </ul>
+    </div>
+    <hr>
+  </div>
+
+  <h4>Afiliados Registrados</h4>
+  <hr />
+  <table>
+    <thead>
+      <tr>
+        <th>Apellido y Nombre</th>
+        <th>DNI/CUIL</th>
+        <th>Teléfono</th>
+        <th>E-mail</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="afiliados.length > 0">
+      <tr *ngFor="let afiliado of afiliados">
+        <td>{{ afiliado.nombre_apellido }}</td>
+        <td>{{ afiliado.cuit_titular }}</td>
+        <td>{{ afiliado.telefono}}</td>
+        <td>{{ afiliado.email }}</td>
+
+        <td><button class="btnVer" (click)="onVerClick(afiliado.id)">Ver</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h3>NUESTROS AFILIADOS</h3>
+  <hr />
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/utesocial-4228352-2.appspot.com/o/img_afiliados_app%2Fafiliadosapp.png?alt=media&token=4d9cbe48-9938-4174-9e98-93ea40806be3"
+    alt="" height="100px" />
+</div>
+<br />

@@ -1,0 +1,44 @@
+<app-navegador></app-navegador>
+<div class="contenedor">
+    <img src="https://firebasestorage.googleapis.com/v0/b/utesocial-4228352-2.appspot.com/o/img_afiliados_app%2FLOGOUTEPLIM.png?alt=media&token=f3602f0d-ebea-49f9-98d6-bba06d6bbfa9" alt="" width="45%">
+  <img src="https://firebasestorage.googleapis.com/v0/b/utesocial-4228352-2.appspot.com/o/img_afiliados_app%2Fmed3.png?alt=media&token=4ef39d56-0793-4a08-8f70-2c359716b642" alt="" width="15%">
+  <hr>
+  <div class="bandeja-principal">
+  
+      <div class="card" (click)="navigateTo('/ver')">
+        <h2>VER</h2>
+        <p>datos de afiliados</p>
+      </div>
+      <div class="card" (click)="navigateTo('/nuevo')">
+        <h2>NUEVO</h2>
+        <p>cargar afiliado</p>
+      </div>
+      <div class="card" (click)="navigateTo('/ruta3')">
+        <h2>PRESTACIONES</h2>
+        <p>ver o cargar prestaciones</p>
+      </div>
+  
+        </div>
+  
+        <div class="bandeja-principal">
+  
+          <div class="card" (click)="navigateTo('/ruta1')">
+            <h2>OTRO </h2>
+           
+          </div>
+          <div class="card" (click)="navigateTo('/ruta2')">
+            <h2>GRUPOS</h2>
+            <p>familiares afiliado</p>
+          </div>
+          <div class="card"  (click)="mostrarAlerta()">
+            <h2>BAJAS</h2>
+            <p>dar de baja afiliados</p>
+          </div>
+      
+            </div>
+  
+           <hr>
+         
+    <p style="color:black">Bienvenido/a a la Bandeja Principal, desde aquí puede dirigirse a cualquier componente del sistema</p>
+    <p style="color:black">En la parte superior de cada componente, encontrará una barra que le permitirá navegar entre secciones</p>
+  </div>

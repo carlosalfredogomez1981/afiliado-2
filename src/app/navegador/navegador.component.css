@@ -1,0 +1,29 @@
+.navegador{
+    display: flex;
+
+   max-width: 900px;
+    margin:0 auto;
+    padding:5px
+   
+  }
+
+
+  a{
+    width: 100px;
+    margin-left: 10px;
+    text-decoration: none; 
+    color: rgb(4, 55, 114);
+    padding:5px ;
+    background-color: rgba(0, 191, 255, 0.493);
+    border-radius: 5px;  
+    text-align: center;
+  }
+
+  a:hover{
+    margin-left: 10px;
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    padding:5px ;
+    background-color: rgb(1, 48, 87);
+    width: 110px;
+  }
